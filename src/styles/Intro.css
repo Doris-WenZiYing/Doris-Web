@@ -35,14 +35,20 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  position: relative;
+  z-index: 2;
   filter: grayscale(15%);
   border: 1px solid rgba(200,184,154,0.15);
   border-radius: 4px;
+  transition: filter 0.3s;
 }
+
+.intro-avatar:hover img { filter: none; }
 
 .intro-avatar-placeholder {
   position: absolute;
   inset: 0;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
