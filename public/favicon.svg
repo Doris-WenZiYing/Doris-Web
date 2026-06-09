@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <!-- Dark background rounded square like app icon -->
+  <rect width="32" height="32" rx="8" fill="#0f0f0f"/>
+
+  <!-- Stylized "D" — left vertical bar + arc -->
+  <!-- Vertical bar -->
+  <rect x="7" y="7" width="3.5" height="18" rx="1.5" fill="#c8b89a"/>
+
+  <!-- The arc — outer path of D shape -->
+  <path
+    d="M10.5 7 H16 C21.5 7 25 10.5 25 16 C25 21.5 21.5 25 16 25 H10.5 V21.5 H16 C19.5 21.5 21.5 19 21.5 16 C21.5 13 19.5 10.5 16 10.5 H10.5 Z"
+    fill="#c8b89a"
+  />
+
+  <!-- Inner cutout to make it hollow -->
+  <path
+    d="M10.5 10.5 H16 C19.5 10.5 21.5 13 21.5 16 C21.5 19 19.5 21.5 16 21.5 H10.5 Z"
+    fill="#0f0f0f"
+  />
+
+  <!-- Small accent dot — like iOS home indicator -->
+  <circle cx="25" cy="25" r="2" fill="#c8b89a" opacity="0.5"/>
+</svg>

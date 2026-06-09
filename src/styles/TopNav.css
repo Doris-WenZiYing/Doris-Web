@@ -1,0 +1,173 @@
+/* ── Gazi's exact navbar UI, Doris content ── */
+.topnav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(15,15,15,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.topnav-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 60px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand — like Gazi's name on the left */
+.topnav-brand {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.3px;
+  flex-shrink: 0;
+}
+
+.topnav-brand:hover { color: var(--accent); }
+.brand-slash { color: var(--accent); }
+
+/* Nav links — same style as Gazi's "Home About Experience..." */
+.topnav-links {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 0 auto;
+}
+
+.topnav-link {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 8px 16px;
+  transition: color 0.2s;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+
+.topnav-link:hover { color: var(--accent); }
+.link-slash { color: var(--accent); margin-right: 1px; font-weight: 300; }
+
+/* Right icons — same as Gazi's email/github/linkedin row */
+.topnav-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.topnav-icon {
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  transition: color 0.2s;
+}
+
+.topnav-icon:hover { color: var(--accent); }
+
+/* Lang toggle */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 8px;
+}
+
+.lang-btn {
+  padding: 4px 11px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+}
+
+.lang-btn.active { color: var(--accent); background: var(--accent-dim2); }
+.lang-btn:hover:not(.active) { color: var(--text-secondary); }
+.lang-divider { width: 1px; height: 18px; background: var(--border); }
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px; height: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.hamburger span {
+  display: block;
+  height: 1.5px;
+  background: var(--text-secondary);
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+  transform-origin: center;
+}
+
+.hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* Mobile menu */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 32px 32px;
+  background: rgba(15,15,15,0.97);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid var(--border);
+}
+
+.mobile-link {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+  animation: slideIn 0.3s ease both;
+  transition: color 0.2s;
+}
+
+.mobile-link:hover { color: var(--accent); }
+
+.mobile-lang {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 28px;
+  width: fit-content;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@media (max-width: 768px) {
+  .topnav-inner { padding: 0 24px; }
+  .topnav-links { display: none; }
+  .topnav-icon  { display: none; }
+  .lang-toggle  { display: none; }
+  .hamburger    { display: flex; }
+}

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=Space+Mono&display=swap');
+
+:root {
+  --bg:            #0f0f0f;
+  --bg-2:          #161616;
+  --bg-3:          #1e1e1e;
+  --border:        rgba(255,255,255,0.07);
+  --border-hover:  rgba(255,255,255,0.15);
+  --text-primary:  #f0ede8;
+  --text-secondary:#9a9a8e;
+  --text-muted:    #555550;
+  --accent:        #c8b89a;
+  --accent-dim:    rgba(200,184,154,0.12);
+  --accent-dim2:   rgba(200,184,154,0.06);
+  --green:         #7ec8a4;
+  --font-display:  'Space Grotesk', sans-serif;
+  --font-body:     'Inter', sans-serif;
+  --font-mono:     'Space Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.75;
+  min-height: 100vh;
+}
+
+::selection { background: var(--accent-dim); color: var(--accent); }
+a { text-decoration: none; color: inherit; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--bg-3); border-radius: 2px; }
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.fade-in-section.is-visible { opacity: 1; transform: none; }
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3.5vw, 38px);
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+}
+
+.section-title .slash {
+  color: var(--accent);
+  margin-right: 10px;
+  font-weight: 400;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  background: var(--border);
+  margin-left: 20px;
+}
+
+section {
+  padding-top: 100px;
+  scroll-margin-top: 72px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
