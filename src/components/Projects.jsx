@@ -7,6 +7,66 @@ const spotlight = [
   // ── WEB ──
   {
     type: "web",
+    name: { zh: "COROS 品牌官網", en: "COROS — Sports Watch Brand" },
+    desc: {
+      zh: "COROS 運動手錶德國官網，響應式設計，呈現產品細節與品牌形象。",
+      en: "Official German website for COROS sports watches — responsive design showcasing product details and brand identity.",
+    },
+    tech: "HTML · CSS · JavaScript · Responsive Design",
+    github: "",
+    live: "https://coros.de/en/home/",
+    bg: "/projects/coros.png",
+  },
+  {
+    type: "web",
+    name: { zh: "GE Vernova 企業官網", en: "GE Vernova — Corporate Website" },
+    desc: {
+      zh: "GE 能源部門 GE Vernova 的全球企業官網，涵蓋能源解決方案、產品線與企業資訊。",
+      en: "Global corporate website for GE Vernova, GE's energy division — energy solutions, product lines, and investor relations.",
+    },
+    tech: "React · Next.js · CMS Integration",
+    github: "",
+    live: "https://www.gevernova.com/",
+    bg: "/projects/gevernova.png",
+  },
+  {
+    type: "web",
+    name: { zh: "Right Condos 房地產網站", en: "Right Condos — Real Estate" },
+    desc: {
+      zh: "加拿大房地產開發商 Right Condos 的官方網站，呈現建案資訊、戶型與購屋流程。",
+      en: "Official website for Canadian real estate developer Right Condos — project info, floor plans, and purchasing process.",
+    },
+    tech: "HTML · CSS · JavaScript · GSAP",
+    github: "",
+    live: "https://rightcondos.com/",
+    bg: "/projects/rightcondos.png",
+  },
+  {
+    type: "web",
+    name: { zh: "Vestas 風力能源官網", en: "Vestas — Wind Energy Leader" },
+    desc: {
+      zh: "全球最大風力發電公司 Vestas 的官網，涵蓋產品、永續發展與全球解決方案。",
+      en: "Website for Vestas, world's leading wind energy company — turbine products, sustainability initiatives, and global solutions.",
+    },
+    tech: "React · TypeScript · Headless CMS",
+    github: "",
+    live: "https://www.vestas.com/en",
+    bg: "/projects/vestas.png",
+  },
+  {
+    type: "wp",
+    name: { zh: "Uninnnn — WordPress 品牌網站", en: "Uninnnn — WordPress Brand Site" },
+    desc: {
+      zh: "以 WordPress 客製化打造的品牌網站，呈現產品與服務，整合響應式設計與 SEO 優化。",
+      en: "Custom WordPress brand website — responsive design, SEO optimization, and tailored product/service presentation.",
+    },
+    tech: "WordPress · ACF · Custom Theme · SEO",
+    github: "",
+    live: "https://www.uninnnn.com/",
+    bg: "/projects/uninnnn.png",
+  },
+  {
+    type: "web",
     name: { zh: "iOS Club 台中逢甲大學", en: "iOS Club — Feng Chia University" },
     desc: {
       zh: "逢甲大學 iOS 社的官方網站，介紹社團活動、課程與招募資訊。",
@@ -40,6 +100,66 @@ const spotlight = [
     github: "https://github.com/Doris-WenZiYing/Quote-Generator",
     live: "",
     bg: "/projects/random-quote-generator.png",
+  },
+  {
+    type: "web",
+    name: { zh: "COROS 官網", en: "COROS Website" },
+    desc: {
+      zh: "運動手錶品牌 COROS 的德國官方網站，前後端完整開發，呈現產品線與品牌故事。",
+      en: "Official German website for COROS, a sports watch brand — full-stack development covering product showcase and brand storytelling.",
+    },
+    tech: "Full-Stack · HTML · CSS · JavaScript",
+    github: "",
+    live: "https://coros.de/en/home/",
+    bg: "/projects/coros.png",
+  },
+  {
+    type: "web",
+    name: { zh: "GE Vernova 官網", en: "GE Vernova Website" },
+    desc: {
+      zh: "全球能源科技公司 GE Vernova 的企業官網開發，大型企業級前後端專案。",
+      en: "Corporate website for GE Vernova, a global energy technology company — enterprise-scale full-stack development.",
+    },
+    tech: "Full-Stack · React · Node.js",
+    github: "",
+    live: "https://www.gevernova.com/",
+    bg: "/projects/gevernova.png",
+  },
+  {
+    type: "web",
+    name: { zh: "Right Condos 房產平台", en: "Right Condos" },
+    desc: {
+      zh: "加拿大房地產預售屋平台，提供物件瀏覽、篩選與詢問功能，完整前後端開發。",
+      en: "Canadian pre-construction condo platform with property listings, filtering, and inquiry flow — full-stack development.",
+    },
+    tech: "Full-Stack · HTML · CSS · JavaScript",
+    github: "",
+    live: "https://rightcondos.com/",
+    bg: "/projects/rightcondos.png",
+  },
+  {
+    type: "web",
+    name: { zh: "Vestas 風電官網", en: "Vestas Website" },
+    desc: {
+      zh: "全球風力能源領導品牌 Vestas 的企業官網，跨國大型前後端開發專案。",
+      en: "Corporate website for Vestas, a global leader in wind energy — large-scale international full-stack project.",
+    },
+    tech: "Full-Stack · React · Node.js",
+    github: "",
+    live: "https://www.vestas.com/en",
+    bg: "/projects/vestas.png",
+  },
+  {
+    type: "wp",
+    name: { zh: "Uninnnn 品牌官網", en: "Uninnnn Brand Site" },
+    desc: {
+      zh: "設計生活風格品牌的 WordPress 官網，客製化主題設計，呈現品牌個性與產品內容。",
+      en: "WordPress site for a design lifestyle brand — custom theme development with a focus on brand identity and visual storytelling.",
+    },
+    tech: "WordPress · Custom Theme · PHP · ACF",
+    github: "",
+    live: "https://www.uninnnn.com/",
+    bg: "/projects/uninnnn.png",
   },
   // ── APP ──
   {
@@ -104,8 +224,8 @@ const spotlight = [
   },
 ];
 
-const badgeLabel = { web: "Web", app: "iOS / App" };
-const filters = ["all", "web", "app"];
+const badgeLabel = { web: "Web", wp: "WordPress", app: "iOS / App" };
+const filters = ["all", "web", "wp", "app"];
 
 const Projects = () => {
   const { lang } = useLang();
@@ -138,7 +258,9 @@ const Projects = () => {
           {filters.map(f => (
             <button key={f} className={`filter-btn${filter === f ? " active" : ""}`} onClick={() => handleFilter(f)}>
               {f === "all" ? (lang === "zh" ? "全部" : "all") :
-               f === "web" ? "Web" : (lang === "zh" ? "iOS / App" : "iOS / App")}
+               f === "web" ? "Web" :
+               f === "wp"  ? "WordPress" :
+               (lang === "zh" ? "iOS / App" : "iOS / App")}
             </button>
           ))}
         </div>
@@ -147,8 +269,11 @@ const Projects = () => {
         <div className="spotlight-wrap">
           <button className="carousel-arrow carousel-arrow--prev" onClick={prev}>‹</button>
 
-          <div className="spotlight-card">
-            <div className="spotlight-bg-placeholder" />
+          <div
+            className="spotlight-card"
+            style={proj.bg ? { backgroundImage: `url(${proj.bg})`, backgroundSize: 'cover', backgroundPosition: 'center' } : {}}
+          >
+            {!proj.bg && <div className="spotlight-bg-placeholder" />}
             <div className="spotlight-overlay" />
             <div className="spotlight-content">
               <span className={`spotlight-badge badge-${proj.type}`}>{badgeLabel[proj.type]}</span>
