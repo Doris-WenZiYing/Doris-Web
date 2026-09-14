@@ -4,6 +4,19 @@ import FadeInSection from "./FadeInSection";
 import "../styles/Projects.css";
 
 const spotlight = [
+  // ── FLAGSHIP ──
+  {
+    type: "app",
+    name: { zh: "SoHa — 德州撲克戰績追蹤", en: "SoHa — Poker Tracker" },
+    desc: {
+      zh: "獨立創辦並開發的 iOS App，幫助牌手記錄戰績、管理團隊分潤，並串接店家開桌公告與 RSVP 報名系統。",
+      en: "Founder & solo developer of an iOS app for tracking poker session P&L and team settlements, with venue table announcements and RSVP.",
+    },
+    tech: "Swift · SwiftUI · Supabase · CoreData",
+    github: "",
+    live: "https://sohatracker.com",
+    bg: "/projects/soha.png",
+  },
   // ── WEB ──
   {
     type: "web",

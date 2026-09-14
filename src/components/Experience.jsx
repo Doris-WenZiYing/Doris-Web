@@ -5,6 +5,26 @@ import "../styles/Experience.css";
 
 const jobs = [
   {
+    tab:    { zh: "SoHa",  en: "SoHa"  },
+    period: { zh: "2026 — 現今",    en: "2026 — PRESENT" },
+    role:   { zh: "創辦人 @",  en: "Founder @" },
+    company:{ zh: "SoHa Poker Tracker", en: "SoHa Poker Tracker" },
+    desc: {
+      zh: [
+        "獨立設計並開發 iOS App，協助德州撲克玩家記錄戰績、管理團隊分潤與場次歷史",
+        "打造店家開桌公告與玩家報名（RSVP）系統，串接即時人數同步與推播提醒",
+        "採用 SwiftUI + CoreData 本地優先架構，搭配 Supabase 處理帳號、同步與後端邏輯",
+        "獨自完成從產品設計、開發、測試到 App Store 上架的完整流程",
+      ],
+      en: [
+        "Solo designed and built an iOS app for tracking poker session P&L, team settlements, and game history",
+        "Built a venue table-announcement and player RSVP system with live headcount sync and push reminders",
+        "Local-first architecture with SwiftUI + CoreData, backed by Supabase for auth, sync, and backend logic",
+        "Owned the entire product lifecycle — design, development, testing, and App Store launch",
+      ],
+    },
+  },
+  {
     tab:    { zh: "自由接案",  en: "Freelance"  },
     period: { zh: "2023 — 現今",    en: "2023 — PRESENT" },
     role:   { zh: "自由接案工程師",  en: "Freelance Engineer @" },
